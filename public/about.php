@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -15,7 +14,7 @@ include ROOT_PATH . '/components/public/header.php';
     <section class="bg-brand text-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
             <div class="max-w-3xl">
-                <span class="text-emerald-300 text-sm font-semibold">ABOUT INVESTGLOBAL</span>
+                <span class="text-gold text-sm font-semibold">ABOUT INVESTGLOBAL</span>
 
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight mt-4 mb-5">
                     Helping people approach investing with greater clarity.
@@ -57,7 +56,7 @@ include ROOT_PATH . '/components/public/header.php';
             <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-canvas rounded-xl p-5">
-                        <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-gold-light text-gold-dark flex items-center justify-center mb-4">
                             <i class="fa-solid fa-compass"></i>
                         </div>
                         <h3 class="font-semibold text-gray-900">Explore</h3>
@@ -117,7 +116,7 @@ include ROOT_PATH . '/components/public/header.php';
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
 
                 <article class="border border-gray-200 rounded-xl p-6">
-                    <div class="w-11 h-11 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-5">
+                    <div class="w-11 h-11 rounded-lg bg-gold-light text-gold-dark flex items-center justify-center mb-5">
                         <i class="fa-solid fa-eye text-lg"></i>
                     </div>
                     <h3 class="font-bold text-gray-900 mb-2">Clarity</h3>

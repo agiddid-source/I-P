@@ -1,4 +1,3 @@
-
 <?php
 
 /**
@@ -7,7 +6,7 @@
  */
 
 // Application details
-define('APP_NAME', 'Investment Platform');
+define('APP_NAME', 'Invest Global');
 define('APP_ENV', 'development');
 
 // Base URL for local XAMPP development

@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -15,7 +14,7 @@ include ROOT_PATH . '/components/public/header.php';
     <section class="bg-brand text-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
             <div class="max-w-3xl">
-                <span class="text-emerald-300 text-sm font-semibold">
+                <span class="text-gold text-sm font-semibold">
                     HOW IT WORKS
                 </span>
 
@@ -57,7 +56,7 @@ include ROOT_PATH . '/components/public/header.php';
             <!-- STEP 1 -->
             <article class="bg-white border border-gray-200 rounded-xl p-6 md:p-8">
                 <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 shrink-0 rounded-xl bg-blue-50 text-brand flex items-center justify-center">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gold-light text-gold-dark flex items-center justify-center">
                         <i class="fa-solid fa-user-plus text-lg"></i>
                     </div>
                     <div>
@@ -125,7 +124,7 @@ include ROOT_PATH . '/components/public/header.php';
             <!-- STEP 5 -->
             <article class="bg-white border border-gray-200 rounded-xl p-6 md:p-8">
                 <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 shrink-0 rounded-xl bg-cyan-50 text-cyan-700 flex items-center justify-center">
+                    <div class="w-12 h-12 shrink-0 rounded-xl bg-gold-light text-gold-dark flex items-center justify-center">
                         <i class="fa-solid fa-chart-pie text-lg"></i>
                     </div>
                     <div>
@@ -177,7 +176,7 @@ include ROOT_PATH . '/components/public/header.php';
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-canvas rounded-xl p-6 md:p-8">
-                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand flex items-center justify-center mb-5">
+                    <div class="w-12 h-12 rounded-xl bg-gold-light text-gold-dark flex items-center justify-center mb-5">
                         <i class="fa-solid fa-rotate text-lg"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Redemption</h3>
@@ -201,7 +200,7 @@ include ROOT_PATH . '/components/public/header.php';
                 </div>
             </div>
 
-            <div class="mt-6 bg-blue-50 border border-blue-100 rounded-xl p-5 flex gap-3">
+            <div class="mt-6 bg-gold-light border border-gold/30 rounded-xl p-5 flex gap-3">
                 <i class="fa-solid fa-circle-info text-brand mt-0.5"></i>
                 <p class="text-sm text-gray-700 leading-relaxed">
                     In short: an investment may need to be redeemed and settled

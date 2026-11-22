@@ -119,7 +119,7 @@ include ROOT_PATH . '/components/public/header.php';
                 </article>
 
                 <article class="rounded-2xl border border-border bg-white p-6">
-                    <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-light text-gold-dark">
                         <i class="fa-solid fa-hourglass-half"></i>
                     </div>
                     <h3 class="mt-4 text-lg font-semibold text-brand">

@@ -1,17 +1,21 @@
-
 tailwind.config = {
     theme: {
         extend: {
             colors: {
                 brand: {
-                    DEFAULT: '#0B1F33',
-                    dark: '#071522',
-                    light: '#163A59'
+                    DEFAULT: '#064B3E',
+                    dark: '#043329',
+                    light: '#0B6A57'
                 },
                 accent: {
                     DEFAULT: '#0F9D78',
                     dark: '#087A5D',
                     light: '#DDF5ED'
+                },
+                gold: {
+                    DEFAULT: '#DDA235',
+                    dark: '#B8841F',
+                    light: '#FBF1DA'
                 },
                 surface: '#FFFFFF',
                 canvas: '#F7F9FB',

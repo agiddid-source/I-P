@@ -11,11 +11,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <div class="grid min-h-screen lg:grid-cols-2">
         <!-- Brand panel -->
         <section class="relative hidden overflow-hidden bg-brand p-10 text-white lg:flex lg:flex-col lg:justify-between xl:p-14">
-            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center gap-3 text-xl font-bold">
-                <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10">
-                    <i class="fa-solid fa-chart-line"></i>
-                </span>
-                InvestGlobal
+            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center">
+                <?php
+                $logoVariant = 'light';
+                $logoClass   = 'h-28 w-auto';
+                include ROOT_PATH . '/components/shared/logo.php';
+                ?>
             </a>
 
             <div class="relative z-10 max-w-xl">
@@ -35,8 +36,7 @@ include ROOT_PATH . '/components/shared/head.php';
             </div>
 
             <div class="relative z-10 flex items-center justify-between text-sm text-white/50">
-                <span>© <?= date('Y') ?> InvestGlobal</span>
-                <span>Prototype experience</span>
+                <span>&copy; <?= date('Y') ?> InvestGlobal</span>
             </div>
 
             <div class="pointer-events-none absolute -right-24 -top-20 h-96 w-96 rounded-full border border-white/10"></div>
@@ -48,11 +48,12 @@ include ROOT_PATH . '/components/shared/head.php';
         <section class="flex items-center justify-center px-4 py-10 sm:px-8">
             <div class="w-full max-w-md">
                 <div class="mb-10 flex items-center justify-between lg:hidden">
-                    <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center gap-2 font-bold text-brand">
-                        <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </span>
-                        InvestGlobal
+                    <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center">
+                        <?php
+                        $logoVariant = 'default';
+                        $logoClass   = 'h-10 w-auto';
+                        include ROOT_PATH . '/components/shared/logo.php';
+                        ?>
                     </a>
 
                     <a href="<?= BASE_URL ?>/public/index.php" class="text-sm font-medium text-muted hover:text-brand">
@@ -72,7 +73,7 @@ include ROOT_PATH . '/components/shared/head.php';
                     </p>
                 </div>
 
-                <div id="loginNotice" class="mb-5 hidden rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-800" role="status"></div>
+                <div id="loginNotice" class="mb-5 hidden rounded-xl border border-gold/40 bg-gold-light px-4 py-3 text-sm text-brand" role="status"></div>
 
                 <form id="loginForm" class="space-y-5" novalidate>
                     <div>

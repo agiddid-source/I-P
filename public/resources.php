@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -15,7 +14,7 @@ include ROOT_PATH . '/components/public/header.php';
     <section class="bg-brand text-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
             <div class="max-w-3xl">
-                <span class="text-emerald-300 text-sm font-semibold">INVESTOR RESOURCES</span>
+                <span class="text-gold text-sm font-semibold">INVESTOR RESOURCES</span>
 
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight mt-4 mb-5">
                     Build your investment knowledge.
@@ -71,12 +70,12 @@ include ROOT_PATH . '/components/public/header.php';
             data-search="investment basics getting started beginner guide">
 
             <div class="grid grid-cols-1 lg:grid-cols-2">
-                <div class="bg-gradient-to-br from-brand to-blue-900 p-8 md:p-10 text-white flex flex-col justify-between min-h-64">
+                <div class="bg-gradient-to-br from-brand to-brand-light p-8 md:p-10 text-white flex flex-col justify-between min-h-64">
                     <div>
                         <span class="inline-flex bg-white/15 px-3 py-1 rounded-full text-xs font-medium">
                             Featured guide
                         </span>
-                        <i class="fa-solid fa-book-open text-5xl block mt-8 text-emerald-300"></i>
+                        <i class="fa-solid fa-book-open text-5xl block mt-8 text-gold"></i>
                     </div>
                     <p class="text-sm text-gray-300 mt-8">Investing basics · 5 min read</p>
                 </div>
@@ -119,7 +118,7 @@ include ROOT_PATH . '/components/public/header.php';
             <article class="resource-card bg-white border border-gray-200 rounded-xl p-6 flex flex-col"
                 data-category="basics"
                 data-search="asset classes stocks bonds real estate cash investments">
-                <div class="w-11 h-11 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-5">
+                <div class="w-11 h-11 rounded-lg bg-gold-light text-gold-dark flex items-center justify-center mb-5">
                     <i class="fa-solid fa-layer-group text-lg"></i>
                 </div>
                 <span class="text-xs font-semibold text-accent">INVESTING BASICS</span>
@@ -187,10 +186,10 @@ include ROOT_PATH . '/components/public/header.php';
             <article class="resource-card bg-white border border-gray-200 rounded-xl p-6 flex flex-col"
                 data-category="process"
                 data-search="redemption settlement withdrawal cash payout">
-                <div class="w-11 h-11 rounded-lg bg-cyan-50 text-cyan-700 flex items-center justify-center mb-5">
+                <div class="w-11 h-11 rounded-lg bg-gold-light text-gold-dark flex items-center justify-center mb-5">
                     <i class="fa-solid fa-arrow-right-arrow-left text-lg"></i>
                 </div>
-                <span class="text-xs font-semibold text-cyan-700">PLATFORM PROCESSES</span>
+                <span class="text-xs font-semibold text-gold-dark">PLATFORM PROCESSES</span>
                 <h3 class="text-lg font-bold text-gray-900 mt-2 mb-3">Redemption vs. withdrawal</h3>
                 <p class="text-sm text-muted leading-relaxed flex-1">
                     Understand the difference between exiting an investment,
