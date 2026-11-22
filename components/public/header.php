@@ -1,4 +1,3 @@
-
 <?php
 $activePage = $activePage ?? '';
 ?>
@@ -13,13 +12,11 @@ $activePage = $activePage ?? '';
             <a href="<?= BASE_URL ?>/public/index.php"
                class="flex items-center gap-2">
 
-                <div class="w-10 h-10 rounded-xl bg-brand flex items-center justify-center">
-                    <i class="fa-solid fa-chart-line text-white text-lg"></i>
-                </div>
-
-                <span class="text-xl font-extrabold tracking-tight text-brand">
-                    Invest<span class="text-accent">Global</span>
-                </span>
+                <?php
+                $logoVariant = 'default';
+                $logoClass   = 'h-14 w-auto';
+                include ROOT_PATH . '/components/shared/logo.php';
+                ?>
 
             </a>
 

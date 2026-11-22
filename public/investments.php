@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -15,14 +14,14 @@ include ROOT_PATH . '/components/public/header.php';
     <section class="bg-brand text-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
             <div class="max-w-3xl">
-                <span class="inline-flex items-center gap-2 text-sm font-medium text-emerald-300 mb-5">
+                <span class="inline-flex items-center gap-2 text-sm font-medium text-gold mb-5">
                     <i class="fa-solid fa-chart-line"></i>
                     Investment marketplace
                 </span>
 
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-5">
                     Explore opportunities.
-                    <span class="text-emerald-300">Invest with clarity.</span>
+                    <span class="text-gold">Invest with clarity.</span>
                 </h1>
 
                 <p class="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl">
@@ -51,7 +50,7 @@ include ROOT_PATH . '/components/public/header.php';
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
             <div class="bg-white border border-gray-200 rounded-xl p-5">
-                <div class="w-11 h-11 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+                <div class="w-11 h-11 rounded-lg bg-gold-light text-gold-dark flex items-center justify-center mb-4">
                     <i class="fa-solid fa-layer-group text-lg"></i>
                 </div>
                 <h3 class="font-semibold text-gray-900 mb-1">Multiple asset classes</h3>
@@ -152,7 +151,7 @@ include ROOT_PATH . '/components/public/header.php';
                 data-category="fixed-income"
                 data-search="global income portfolio fixed income bonds">
 
-                <div class="h-40 bg-gradient-to-br from-brand to-blue-800 p-6 flex flex-col justify-between">
+                <div class="h-40 bg-gradient-to-br from-brand to-brand-light p-6 flex flex-col justify-between">
                     <div class="flex justify-between items-start">
                         <span class="bg-white/15 text-white text-xs px-3 py-1 rounded-full">
                             Fixed Income
@@ -412,7 +411,7 @@ include ROOT_PATH . '/components/public/header.php';
                 data-category="managed"
                 data-search="global income managed portfolio multi asset">
 
-                <div class="h-40 bg-gradient-to-br from-cyan-700 to-blue-900 p-6 flex flex-col justify-between">
+                <div class="h-40 bg-gradient-to-br from-gold-dark to-brand-dark p-6 flex flex-col justify-between">
                     <div class="flex justify-between items-start">
                         <span class="bg-white/15 text-white text-xs px-3 py-1 rounded-full">
                             Managed Portfolio
@@ -480,7 +479,7 @@ include ROOT_PATH . '/components/public/header.php';
 
     <!-- RISK NOTICE -->
     <section class="max-w-7xl mx-auto px-6 lg:px-8 pb-16">
-        <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-5">
+        <div class="bg-gold-light border border-gold/30 rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-5">
             <div class="w-12 h-12 shrink-0 rounded-lg bg-white text-brand flex items-center justify-center">
                 <i class="fa-solid fa-shield-halved text-xl"></i>
             </div>
