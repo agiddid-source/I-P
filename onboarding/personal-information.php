@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -13,11 +12,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <!-- Header -->
     <header class="border-b border-border bg-white">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center gap-3 text-lg font-bold text-brand">
-                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-white">
-                    <i class="fa-solid fa-chart-line"></i>
-                </span>
-                InvestGlobal
+            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center">
+                <?php
+                $logoVariant = 'default';
+                $logoClass   = 'h-11 w-auto';
+                include ROOT_PATH . '/components/shared/logo.php';
+                ?>
             </a>
 
             <span class="rounded-full bg-accent-light px-3 py-1.5 text-xs font-semibold text-accent-dark">
@@ -206,7 +206,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                 <!-- Contact -->
                 <div class="mb-7 mt-9 flex items-center gap-3 border-b border-border pb-5">
-                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gold-light text-gold-dark">
                         <i class="fa-solid fa-address-book"></i>
                     </div>
 
@@ -243,10 +243,10 @@ include ROOT_PATH . '/components/shared/head.php';
                 </div>
 
                 <!-- Notice -->
-                <div class="mt-8 flex gap-3 rounded-xl border border-blue-200 bg-blue-50 p-4">
-                    <i class="fa-solid fa-shield-halved mt-0.5 text-blue-600"></i>
+                <div class="mt-8 flex gap-3 rounded-xl border border-gold/40 bg-gold-light p-4">
+                    <i class="fa-solid fa-shield-halved mt-0.5 text-gold-dark"></i>
 
-                    <p class="text-xs leading-5 text-blue-800">
+                    <p class="text-xs leading-5 text-brand">
                         Your details are requested for investor identification
                         and onboarding purposes.
                     </p>

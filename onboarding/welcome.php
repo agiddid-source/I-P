@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -14,11 +13,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <header class="border-b border-border bg-white">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
-            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center gap-3 text-lg font-bold text-brand">
-                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-white">
-                    <i class="fa-solid fa-chart-line"></i>
-                </span>
-                InvestGlobal
+            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center">
+                <?php
+                $logoVariant = 'default';
+                $logoClass   = 'h-11 w-auto';
+                include ROOT_PATH . '/components/shared/logo.php';
+                ?>
             </a>
 
             <span class="rounded-full bg-accent-light px-3 py-1.5 text-xs font-semibold text-accent-dark">
@@ -212,15 +212,15 @@ include ROOT_PATH . '/components/shared/head.php';
             </div>
 
             <!-- Important note -->
-            <div class="mt-6 flex gap-3 rounded-xl border border-blue-200 bg-blue-50 p-5">
-                <i class="fa-solid fa-circle-info mt-0.5 text-blue-600"></i>
+            <div class="mt-6 flex gap-3 rounded-xl border border-gold/40 bg-gold-light p-5">
+                <i class="fa-solid fa-circle-info mt-0.5 text-gold-dark"></i>
 
                 <div>
-                    <h3 class="text-sm font-semibold text-blue-900">
+                    <h3 class="text-sm font-semibold text-brand">
                         A quick note about verification
                     </h3>
 
-                    <p class="mt-1 text-sm leading-6 text-blue-800">
+                    <p class="mt-1 text-sm leading-6 text-brand">
                         Information requirements can differ depending on your
                         country of residence, investor classification, and
                         applicable regulations. Completing these screens does
@@ -244,7 +244,7 @@ include ROOT_PATH . '/components/shared/head.php';
             </div>
 
             <p class="mt-8 text-center text-xs text-muted">
-                © <?= date('Y') ?> InvestGlobal. All rights reserved.
+                &copy; <?= date('Y') ?> InvestGlobal. All rights reserved.
             </p>
 
         </div>

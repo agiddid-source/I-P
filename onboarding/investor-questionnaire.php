@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -11,12 +10,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
         <!-- Brand -->
-        <a href="<?= BASE_URL ?>/public/index.php"
-           class="inline-flex items-center gap-2 mb-10">
-            <span class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center">
-                <i class="fa-solid fa-chart-line"></i>
-            </span>
-            <span class="text-xl font-bold text-brand">InvestGlobal</span>
+        <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center mb-10">
+            <?php
+            $logoVariant = 'default';
+            $logoClass   = 'h-11 w-auto';
+            include ROOT_PATH . '/components/shared/logo.php';
+            ?>
         </a>
 
         <!-- Progress -->
@@ -78,7 +77,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                             <div class="space-y-3">
                                 <label class="flex items-start gap-3 border border-border rounded-xl p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="experience" value="beginner" required class="mt-1 accent-emerald-600">
+                                    <input type="radio" name="experience" value="beginner" required class="mt-1 accent-accent">
                                     <span>
                                         <span class="block text-sm font-medium text-brand">Beginner</span>
                                         <span class="block text-xs text-muted mt-1">I have little or no previous investment experience.</span>
@@ -86,7 +85,7 @@ include ROOT_PATH . '/components/shared/head.php';
                                 </label>
 
                                 <label class="flex items-start gap-3 border border-border rounded-xl p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="experience" value="intermediate" class="mt-1 accent-emerald-600">
+                                    <input type="radio" name="experience" value="intermediate" class="mt-1 accent-accent">
                                     <span>
                                         <span class="block text-sm font-medium text-brand">Intermediate</span>
                                         <span class="block text-xs text-muted mt-1">I have invested before and understand common investment products.</span>
@@ -94,7 +93,7 @@ include ROOT_PATH . '/components/shared/head.php';
                                 </label>
 
                                 <label class="flex items-start gap-3 border border-border rounded-xl p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="experience" value="experienced" class="mt-1 accent-emerald-600">
+                                    <input type="radio" name="experience" value="experienced" class="mt-1 accent-accent">
                                     <span>
                                         <span class="block text-sm font-medium text-brand">Experienced</span>
                                         <span class="block text-xs text-muted mt-1">I regularly invest and understand different financial instruments.</span>
@@ -125,7 +124,7 @@ include ROOT_PATH . '/components/shared/head.php';
                                 foreach ($products as $product):
                                 ?>
                                     <label class="flex items-center gap-3 border border-border rounded-lg p-3 text-sm text-gray-700 cursor-pointer hover:border-accent">
-                                        <input type="checkbox" name="products[]" value="<?= htmlspecialchars($product) ?>" class="product-checkbox accent-emerald-600">
+                                        <input type="checkbox" name="products[]" value="<?= htmlspecialchars($product) ?>" class="product-checkbox accent-accent">
                                         <?= htmlspecialchars($product) ?>
                                     </label>
                                 <?php endforeach; ?>
@@ -163,7 +162,7 @@ include ROOT_PATH . '/components/shared/head.php';
                         foreach ($objectives as $objective):
                         ?>
                             <label class="flex items-center gap-3 border border-border rounded-lg p-3 text-sm text-gray-700 cursor-pointer hover:border-accent">
-                                <input type="checkbox" name="objectives[]" value="<?= htmlspecialchars($objective) ?>" class="accent-emerald-600">
+                                <input type="checkbox" name="objectives[]" value="<?= htmlspecialchars($objective) ?>" class="accent-accent">
                                 <?= htmlspecialchars($objective) ?>
                             </label>
                         <?php endforeach; ?>
@@ -185,7 +184,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <div class="space-y-3">
                         <label class="flex items-start gap-3 border border-border rounded-xl p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="riskTolerance" value="low" required class="mt-1 accent-emerald-600">
+                            <input type="radio" name="riskTolerance" value="low" required class="mt-1 accent-accent">
                             <span>
                                 <span class="block text-sm font-medium text-brand">Low risk</span>
                                 <span class="block text-xs text-muted mt-1">I prefer stability and want to limit potential losses, even if returns are lower.</span>
@@ -193,7 +192,7 @@ include ROOT_PATH . '/components/shared/head.php';
                         </label>
 
                         <label class="flex items-start gap-3 border border-border rounded-xl p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="riskTolerance" value="moderate" class="mt-1 accent-emerald-600">
+                            <input type="radio" name="riskTolerance" value="moderate" class="mt-1 accent-accent">
                             <span>
                                 <span class="block text-sm font-medium text-brand">Moderate risk</span>
                                 <span class="block text-xs text-muted mt-1">I can accept some fluctuations in pursuit of long-term growth.</span>
@@ -201,7 +200,7 @@ include ROOT_PATH . '/components/shared/head.php';
                         </label>
 
                         <label class="flex items-start gap-3 border border-border rounded-xl p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="riskTolerance" value="high" class="mt-1 accent-emerald-600">
+                            <input type="radio" name="riskTolerance" value="high" class="mt-1 accent-accent">
                             <span>
                                 <span class="block text-sm font-medium text-brand">High risk</span>
                                 <span class="block text-xs text-muted mt-1">I can accept significant fluctuations and potential losses for higher growth opportunities.</span>
@@ -225,7 +224,7 @@ include ROOT_PATH . '/components/shared/head.php';
                             foreach ($lossResponses as $value => $label):
                             ?>
                                 <label class="flex items-center gap-3 border border-border rounded-lg p-3 text-sm text-gray-700 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="lossReaction" value="<?= $value ?>" required class="accent-emerald-600">
+                                    <input type="radio" name="lossReaction" value="<?= $value ?>" required class="accent-accent">
                                     <?= $label ?>
                                 </label>
                             <?php endforeach; ?>
@@ -248,22 +247,22 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <div class="space-y-3">
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="timeHorizon" value="under-1" required class="accent-emerald-600">
+                            <input type="radio" name="timeHorizon" value="under-1" required class="accent-accent">
                             <span class="text-sm text-brand">Less than 1 year</span>
                         </label>
 
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="timeHorizon" value="1-3" class="accent-emerald-600">
+                            <input type="radio" name="timeHorizon" value="1-3" class="accent-accent">
                             <span class="text-sm text-brand">1–3 years</span>
                         </label>
 
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="timeHorizon" value="3-5" class="accent-emerald-600">
+                            <input type="radio" name="timeHorizon" value="3-5" class="accent-accent">
                             <span class="text-sm text-brand">3–5 years</span>
                         </label>
 
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="timeHorizon" value="5-plus" class="accent-emerald-600">
+                            <input type="radio" name="timeHorizon" value="5-plus" class="accent-accent">
                             <span class="text-sm text-brand">More than 5 years</span>
                         </label>
                     </div>
@@ -284,22 +283,22 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <div class="space-y-3">
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="liquidity" value="immediate" required class="accent-emerald-600">
+                            <input type="radio" name="liquidity" value="immediate" required class="accent-accent">
                             <span class="text-sm text-brand">At any time, including at short notice</span>
                         </label>
 
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="liquidity" value="within-year" class="accent-emerald-600">
+                            <input type="radio" name="liquidity" value="within-year" class="accent-accent">
                             <span class="text-sm text-brand">Within the next 12 months</span>
                         </label>
 
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="liquidity" value="1-3-years" class="accent-emerald-600">
+                            <input type="radio" name="liquidity" value="1-3-years" class="accent-accent">
                             <span class="text-sm text-brand">Within 1–3 years</span>
                         </label>
 
                         <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                            <input type="radio" name="liquidity" value="not-soon" class="accent-emerald-600">
+                            <input type="radio" name="liquidity" value="not-soon" class="accent-accent">
                             <span class="text-sm text-brand">I do not expect to need it soon</span>
                         </label>
                     </div>
@@ -323,17 +322,17 @@ include ROOT_PATH . '/components/shared/head.php';
 
                             <div class="space-y-3">
                                 <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="lossCapacity" value="significant" required class="accent-emerald-600">
+                                    <input type="radio" name="lossCapacity" value="significant" required class="accent-accent">
                                     <span class="text-sm text-brand">It would seriously affect my financial stability.</span>
                                 </label>
 
                                 <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="lossCapacity" value="manageable" class="accent-emerald-600">
+                                    <input type="radio" name="lossCapacity" value="manageable" class="accent-accent">
                                     <span class="text-sm text-brand">It would affect my finances, but I could manage.</span>
                                 </label>
 
                                 <label class="flex items-center gap-3 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="lossCapacity" value="limited-impact" class="accent-emerald-600">
+                                    <input type="radio" name="lossCapacity" value="limited-impact" class="accent-accent">
                                     <span class="text-sm text-brand">It would have a limited impact on my financial situation.</span>
                                 </label>
                             </div>
@@ -346,12 +345,12 @@ include ROOT_PATH . '/components/shared/head.php';
 
                             <div class="flex flex-col sm:flex-row gap-3">
                                 <label class="flex-1 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="emergencyFund" value="yes" required class="accent-emerald-600 mr-2">
+                                    <input type="radio" name="emergencyFund" value="yes" required class="accent-accent mr-2">
                                     <span class="text-sm text-brand">Yes</span>
                                 </label>
 
                                 <label class="flex-1 border border-border rounded-lg p-4 cursor-pointer hover:border-accent">
-                                    <input type="radio" name="emergencyFund" value="no" class="accent-emerald-600 mr-2">
+                                    <input type="radio" name="emergencyFund" value="no" class="accent-accent mr-2">
                                     <span class="text-sm text-brand">No</span>
                                 </label>
                             </div>
@@ -361,13 +360,13 @@ include ROOT_PATH . '/components/shared/head.php';
                 </section>
 
                 <!-- Notice -->
-                <div class="flex gap-3 p-4 rounded-xl bg-blue-50 border border-blue-100">
-                    <i class="fa-solid fa-circle-info text-blue-600 mt-1"></i>
+                <div class="flex gap-3 p-4 rounded-xl bg-gold-light border border-gold/30">
+                    <i class="fa-solid fa-circle-info text-gold-dark mt-1"></i>
                     <div>
-                        <p class="text-sm font-semibold text-blue-900 mb-1">
+                        <p class="text-sm font-semibold text-brand mb-1">
                             About your investor profile
                         </p>
-                        <p class="text-xs text-blue-800 leading-relaxed">
+                        <p class="text-xs text-brand leading-relaxed">
                             Your answers are intended to support an assessment
                             of your investment knowledge, objectives and capacity
                             for risk. They do not guarantee suitability or returns.

@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -11,12 +10,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
         <!-- Brand -->
-        <a href="<?= BASE_URL ?>/public/index.php"
-           class="inline-flex items-center gap-2 mb-10">
-            <span class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center">
-                <i class="fa-solid fa-chart-line"></i>
-            </span>
-            <span class="text-xl font-bold text-brand">InvestGlobal</span>
+        <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center mb-10">
+            <?php
+            $logoVariant = 'default';
+            $logoClass   = 'h-11 w-auto';
+            include ROOT_PATH . '/components/shared/logo.php';
+            ?>
         </a>
 
         <!-- Progress -->
@@ -140,13 +139,13 @@ include ROOT_PATH . '/components/shared/head.php';
 
                         <label class="flex-1 border border-border rounded-xl p-4 cursor-pointer hover:border-accent transition">
                             <input type="radio" name="additionalTax"
-                                   value="no" checked class="accent-emerald-600 mr-2">
+                                   value="no" checked class="accent-accent mr-2">
                             <span class="font-medium text-sm text-brand">No</span>
                         </label>
 
                         <label class="flex-1 border border-border rounded-xl p-4 cursor-pointer hover:border-accent transition">
                             <input type="radio" name="additionalTax"
-                                   value="yes" class="accent-emerald-600 mr-2">
+                                   value="yes" class="accent-accent mr-2">
                             <span class="font-medium text-sm text-brand">Yes</span>
                         </label>
 
@@ -204,7 +203,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                         <label class="flex items-start gap-3 p-4 border border-border rounded-xl cursor-pointer">
                             <input type="radio" name="usTaxStatus"
-                                   value="yes" required class="mt-1 accent-emerald-600">
+                                   value="yes" required class="mt-1 accent-accent">
                             <span>
                                 <span class="block text-sm font-medium text-brand">
                                     I am a US citizen or otherwise a US tax person.
@@ -217,7 +216,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                         <label class="flex items-start gap-3 p-4 border border-border rounded-xl cursor-pointer">
                             <input type="radio" name="usTaxStatus"
-                                   value="no" required class="mt-1 accent-emerald-600">
+                                   value="no" required class="mt-1 accent-accent">
                             <span>
                                 <span class="block text-sm font-medium text-brand">
                                     I am not a US tax person.
@@ -238,7 +237,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <label class="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" id="taxDeclaration" required
-                               class="mt-1 w-4 h-4 accent-emerald-600">
+                               class="mt-1 w-4 h-4 accent-accent">
 
                         <span class="text-sm text-gray-600 leading-relaxed">
                             I confirm that the tax residency information provided
@@ -250,15 +249,15 @@ include ROOT_PATH . '/components/shared/head.php';
                 </section>
 
                 <!-- Notice -->
-                <div class="flex gap-3 p-4 rounded-xl bg-blue-50 border border-blue-100">
-                    <i class="fa-solid fa-circle-info text-blue-600 mt-1"></i>
+                <div class="flex gap-3 p-4 rounded-xl bg-gold-light border border-gold/30">
+                    <i class="fa-solid fa-circle-info text-gold-dark mt-1"></i>
 
                     <div>
-                        <p class="text-sm font-semibold text-blue-900 mb-1">
+                        <p class="text-sm font-semibold text-brand mb-1">
                             Important tax notice
                         </p>
 
-                        <p class="text-xs text-blue-800 leading-relaxed">
+                        <p class="text-xs text-brand leading-relaxed">
                             Tax rules and reporting obligations vary by country.
                             This is a demonstration form, not tax advice or a
                             substitute for jurisdiction-specific tax documentation.

@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -11,12 +10,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <div class="mx-auto max-w-3xl">
 
         <!-- Brand -->
-        <a href="<?= BASE_URL ?>/public/index.php"
-           class="mb-10 inline-flex items-center gap-2 text-xl font-bold tracking-tight text-brand">
-            <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-white">
-                <i class="fa-solid fa-chart-line"></i>
-            </span>
-            InvestGlobal
+        <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center mb-10">
+            <?php
+            $logoVariant = 'default';
+            $logoClass   = 'h-11 w-auto';
+            include ROOT_PATH . '/components/shared/logo.php';
+            ?>
         </a>
 
         <!-- Status heading -->
@@ -152,12 +151,12 @@ include ROOT_PATH . '/components/shared/head.php';
         </section>
 
         <!-- Review information -->
-        <section class="mb-6 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+        <section class="mb-6 rounded-2xl border border-gold/30 bg-gold-light p-5">
             <div class="flex gap-3">
-                <i class="fa-solid fa-circle-info mt-1 text-blue-600"></i>
+                <i class="fa-solid fa-circle-info mt-1 text-gold-dark"></i>
                 <div>
-                    <h3 class="font-semibold text-blue-900">What happens next?</h3>
-                    <p class="mt-1 text-sm leading-6 text-blue-800">
+                    <h3 class="font-semibold text-brand">What happens next?</h3>
+                    <p class="mt-1 text-sm leading-6 text-brand">
                         Review timelines depend on your jurisdiction,
                         document quality, verification providers
                         and compliance requirements. You would receive 

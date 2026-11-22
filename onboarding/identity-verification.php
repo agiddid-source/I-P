@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -11,12 +10,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
         <!-- Brand -->
-        <a href="<?= BASE_URL ?>/public/index.php"
-           class="inline-flex items-center gap-2 mb-10">
-            <span class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center">
-                <i class="fa-solid fa-chart-line"></i>
-            </span>
-            <span class="text-xl font-bold text-brand">InvestGlobal</span>
+        <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center mb-10">
+            <?php
+            $logoVariant = 'default';
+            $logoClass   = 'h-11 w-auto';
+            include ROOT_PATH . '/components/shared/logo.php';
+            ?>
         </a>
 
         <!-- Progress -->
