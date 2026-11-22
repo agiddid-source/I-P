@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -167,18 +166,18 @@ include ROOT_PATH . '/components/investor/sidebar.php';
         </section>
 
         <!-- MARKETPLACE NOTICE -->
-        <section class="bg-blue-50 border border-blue-100 rounded-xl p-4 mb-7">
+        <section class="bg-gold-light border border-gold/30 rounded-xl p-4 mb-7">
             <div class="flex gap-3">
-                <div class="w-9 h-9 shrink-0 rounded-lg bg-blue-100 text-blue-700
+                <div class="w-9 h-9 shrink-0 rounded-lg bg-gold-light text-gold-dark
                             flex items-center justify-center">
                     <i class="fas fa-circle-info"></i>
                 </div>
 
                 <div>
-                    <h3 class="text-sm font-semibold text-blue-900">
+                    <h3 class="text-sm font-semibold text-brand">
                         Explore before you invest
                     </h3>
-                    <p class="text-sm text-blue-800 mt-1 leading-relaxed">
+                    <p class="text-sm text-brand mt-1 leading-relaxed">
                         Review each product's investment terms, fees, risks and eligibility
                         requirements. Product availability may vary depending on your
                         country of residence and investor classification.
@@ -193,7 +192,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
             <div class="bg-white border border-gray-200 rounded-xl p-5">
                 <div class="flex items-center justify-between">
                     <p class="text-sm text-gray-500">Available opportunities</p>
-                    <span class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600
+                    <span class="w-9 h-9 rounded-lg bg-accent-light text-accent
                                  flex items-center justify-center">
                         <i class="fas fa-layer-group"></i>
                     </span>
@@ -209,7 +208,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
             <div class="bg-white border border-gray-200 rounded-xl p-5">
                 <div class="flex items-center justify-between">
                     <p class="text-sm text-gray-500">Investment categories</p>
-                    <span class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600
+                    <span class="w-9 h-9 rounded-lg bg-gold-light text-gold-dark
                                  flex items-center justify-center">
                         <i class="fas fa-shapes"></i>
                     </span>
@@ -250,7 +249,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                 </div>
 
                 <button type="button" id="clearFilters"
-                        class="text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                        class="text-sm font-semibold text-accent-dark hover:text-accent-dark">
                     <i class="fas fa-rotate-left mr-1"></i>
                     Reset filters
                 </button>
@@ -273,8 +272,8 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                         <input type="text" id="productSearch"
                                placeholder="Search by name or category..."
                                class="w-full pl-9 pr-3 py-2.5 border border-gray-200
-                                      rounded-lg text-sm focus:ring-2 focus:ring-emerald-100
-                                      focus:border-emerald-500 outline-none">
+                                      rounded-lg text-sm focus:ring-2 focus:ring-accent/10
+                                      focus:border-accent outline-none">
                     </div>
                 </div>
 
@@ -287,7 +286,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                     <select id="categoryFilter"
                             class="w-full px-3 py-2.5 border border-gray-200 rounded-lg
-                                   text-sm bg-white outline-none focus:border-emerald-500">
+                                   text-sm bg-white outline-none focus:border-accent">
                         <option value="">All categories</option>
                         <option value="Fixed Income">Fixed Income</option>
                         <option value="Real Estate">Real Estate</option>
@@ -306,7 +305,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                     <select id="riskFilter"
                             class="w-full px-3 py-2.5 border border-gray-200 rounded-lg
-                                   text-sm bg-white outline-none focus:border-emerald-500">
+                                   text-sm bg-white outline-none focus:border-accent">
                         <option value="">All risk levels</option>
                         <option value="Low">Low</option>
                         <option value="Medium">Medium</option>
@@ -323,7 +322,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                     <select id="currencyFilter"
                             class="w-full px-3 py-2.5 border border-gray-200 rounded-lg
-                                   text-sm bg-white outline-none focus:border-emerald-500">
+                                   text-sm bg-white outline-none focus:border-accent">
                         <option value="">All currencies</option>
                         <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
@@ -348,7 +347,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                     <select id="sortFilter"
                             class="px-3 py-2 border border-gray-200 rounded-lg
-                                   text-sm bg-white outline-none focus:border-emerald-500">
+                                   text-sm bg-white outline-none focus:border-accent">
                         <option value="featured">Featured first</option>
                         <option value="return-high">Target return: High to low</option>
                         <option value="minimum-low">Minimum investment: Low to high</option>
@@ -369,17 +368,17 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                     <?php
                     $riskStyles = [
-                        'Low' => 'bg-emerald-50 text-emerald-700',
+                        'Low' => 'bg-accent-light text-accent-dark',
                         'Medium' => 'bg-amber-50 text-amber-700',
                         'High' => 'bg-rose-50 text-rose-700'
                     ];
 
                     $colorStyles = [
-                        'blue' => 'bg-blue-50 text-blue-700',
-                        'emerald' => 'bg-emerald-50 text-emerald-700',
+                        'blue' => 'bg-gold-light text-gold-dark',
+                        'emerald' => 'bg-accent-light text-accent-dark',
                         'purple' => 'bg-purple-50 text-purple-700',
                         'orange' => 'bg-orange-50 text-orange-700',
-                        'cyan' => 'bg-cyan-50 text-cyan-700',
+                        'cyan' => 'bg-gold-light text-gold-dark',
                         'rose' => 'bg-rose-50 text-rose-700'
                     ];
                     ?>
@@ -408,7 +407,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                                 <?php if ($product['featured']): ?>
                                     <span class="text-xs font-semibold px-2.5 py-1
-                                                 bg-emerald-50 text-emerald-700 rounded-full">
+                                                 bg-accent-light text-accent-dark rounded-full">
                                         <i class="fas fa-star text-[10px] mr-1"></i>
                                         Featured
                                     </span>
@@ -498,7 +497,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                             <a href="<?= BASE_URL ?>/investor/investment-details.php?id=<?= urlencode($product['id']) ?>"
                                class="mt-6 w-full inline-flex items-center justify-center gap-2
-                                      bg-[#0B1F33] hover:bg-[#163A59] text-white
+                                      bg-brand hover:bg-brand-light text-white
                                       text-sm font-semibold py-3 rounded-lg transition">
                                 View Investment
                                 <i class="fas fa-arrow-right text-xs"></i>
@@ -531,7 +530,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                 </p>
 
                 <button type="button" id="emptyResetFilters"
-                        class="mt-5 text-sm font-semibold text-emerald-700 hover:text-emerald-800">
+                        class="mt-5 text-sm font-semibold text-accent-dark hover:text-accent-dark">
                     Clear all filters
                 </button>
 

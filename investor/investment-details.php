@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -262,7 +261,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                 </p>
 
                 <a href="<?= BASE_URL ?>/investor/investments.php"
-                   class="inline-flex mt-6 bg-[#0B1F33] text-white px-5 py-3 rounded-lg text-sm font-semibold">
+                   class="inline-flex mt-6 bg-brand text-white px-5 py-3 rounded-lg text-sm font-semibold">
                     Back to Investments
                 </a>
 
@@ -273,7 +272,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
             <!-- BREADCRUMB -->
             <div class="flex items-center gap-2 text-sm text-gray-500 mb-5">
                 <a href="<?= BASE_URL ?>/investor/investments.php"
-                   class="hover:text-emerald-700">
+                   class="hover:text-accent-dark">
                     Investments
                 </a>
 
@@ -289,7 +288,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                     <div class="flex items-start gap-4">
 
-                        <div class="w-14 h-14 shrink-0 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl">
+                        <div class="w-14 h-14 shrink-0 rounded-xl bg-accent-light text-accent-dark flex items-center justify-center text-xl">
                             <i class="fas <?= htmlspecialchars($product['icon']) ?>"></i>
                         </div>
 
@@ -300,7 +299,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                                     <?= htmlspecialchars($product['category']) ?>
                                 </span>
 
-                                <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">
+                                <span class="text-xs font-semibold text-accent-dark bg-accent-light px-2.5 py-1 rounded-full">
                                     <i class="fas fa-circle text-[7px] mr-1"></i>
                                     <?= htmlspecialchars($product['status']) ?>
                                 </span>
@@ -325,7 +324,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                     <div class="flex flex-col sm:flex-row lg:flex-col gap-3 lg:min-w-[190px]">
 
                         <a href="<?= BASE_URL ?>/investor/investment-confirmation.php?id=<?= urlencode($product['id']) ?>"
-                           class="inline-flex items-center justify-center gap-2 bg-[#0B1F33] hover:bg-[#163A59] text-white font-semibold text-sm px-5 py-3 rounded-lg transition">
+                           class="inline-flex items-center justify-center gap-2 bg-brand hover:bg-brand-light text-white font-semibold text-sm px-5 py-3 rounded-lg transition">
                             Invest Now
                             <i class="fas fa-arrow-right text-xs"></i>
                         </a>
@@ -422,7 +421,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                                 <div class="flex items-start gap-3">
 
-                                    <div class="w-8 h-8 shrink-0 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center">
+                                    <div class="w-8 h-8 shrink-0 rounded-lg bg-accent-light text-accent-dark flex items-center justify-center">
                                         <i class="fas fa-check text-xs"></i>
                                     </div>
 
@@ -454,7 +453,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                             <?php foreach ($product['suitable_for'] as $item): ?>
 
                                 <div class="flex items-start gap-3 text-sm text-gray-600">
-                                    <i class="fas fa-circle-check text-emerald-600 mt-1"></i>
+                                    <i class="fas fa-circle-check text-accent mt-1"></i>
                                     <span><?= htmlspecialchars($item) ?></span>
                                 </div>
 
@@ -554,7 +553,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                             <div class="flex justify-between gap-3 text-sm">
                                 <span class="text-gray-500">Availability</span>
-                                <span class="font-semibold text-emerald-700">
+                                <span class="font-semibold text-accent-dark">
                                     <?= htmlspecialchars($product['status']) ?>
                                 </span>
                             </div>
@@ -562,7 +561,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                         </div>
 
                         <a href="<?= BASE_URL ?>/investor/investment-confirmation.php?id=<?= urlencode($product['id']) ?>"
-                           class="mt-6 block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm py-3 rounded-lg transition">
+                           class="mt-6 block text-center bg-accent hover:bg-accent-dark text-white font-semibold text-sm py-3 rounded-lg transition">
                             Proceed to Invest
                         </a>
 
@@ -591,7 +590,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                             </div>
 
                             <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                                <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
+                                <div class="w-9 h-9 rounded-lg bg-gold-light text-gold-dark flex items-center justify-center">
                                     <i class="fas fa-file-lines"></i>
                                 </div>
 
@@ -613,7 +612,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                     </section>
 
                     <!-- SUPPORT -->
-                    <section class="bg-[#0B1F33] rounded-xl p-5 text-white">
+                    <section class="bg-brand rounded-xl p-5 text-white">
 
                         <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center mb-4">
                             <i class="fas fa-headset"></i>
@@ -629,7 +628,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                         </p>
 
                         <a href="mailto:support@example.com"
-                           class="inline-flex items-center gap-2 text-sm font-semibold mt-4 text-emerald-300 hover:text-white">
+                           class="inline-flex items-center gap-2 text-sm font-semibold mt-4 text-gold hover:text-white">
                             Contact Support
                             <i class="fas fa-arrow-right text-xs"></i>
                         </a>

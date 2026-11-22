@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -43,9 +42,9 @@ include ROOT_PATH . '/components/shared/head.php';
             </section>
 
             <!-- Demo notice -->
-            <div class="mb-7 flex items-start gap-3 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
-                <i class="fa-solid fa-circle-info mt-0.5 text-blue-600"></i>
-                <p class="text-xs leading-5 text-blue-800">
+            <div class="mb-7 flex items-start gap-3 rounded-xl border border-gold/30 bg-gold-light px-4 py-3">
+                <i class="fa-solid fa-circle-info mt-0.5 text-gold-dark"></i>
+                <p class="text-xs leading-5 text-brand">
                     Demonstration dashboard. All balances, returns, transactions
                     and portfolio figures displayed here are illustrative and
                     do not represent actual investments or account balances.
@@ -71,7 +70,7 @@ include ROOT_PATH . '/components/shared/head.php';
                     <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
                         <div class="flex items-center justify-between">
                             <span class="text-sm text-gray-500">Portfolio Value</span>
-                            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                            <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-gold-light text-gold-dark">
                                 <i class="fa-solid fa-chart-pie"></i>
                             </span>
                         </div>
@@ -239,7 +238,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <div class="my-7 flex justify-center">
                         <div class="relative flex h-44 w-44 items-center justify-center rounded-full"
-                             style="background: conic-gradient(#0F9D78 0% 45%, #2E90FA 45% 75%, #F79009 75% 90%, #A78BFA 90% 100%);">
+                             style="background: conic-gradient(#0F9D78 0% 45%, #064B3E 45% 75%, #DDA235 75% 90%, #8FD3BC 90% 100%);">
 
                             <div class="flex h-28 w-28 flex-col items-center justify-center rounded-full bg-white">
                                 <span class="text-xs text-gray-400">Total invested</span>
@@ -261,7 +260,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2">
-                                <span class="h-3 w-3 rounded-sm bg-blue-500"></span>
+                                <span class="h-3 w-3 rounded-sm bg-gold-light0"></span>
                                 <span class="text-sm text-gray-600">Equities</span>
                             </div>
                             <span class="text-sm font-semibold text-gray-900">30%</span>
@@ -269,7 +268,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2">
-                                <span class="h-3 w-3 rounded-sm bg-amber-500"></span>
+                                <span class="h-3 w-3 rounded-sm bg-gold"></span>
                                 <span class="text-sm text-gray-600">Real Assets</span>
                             </div>
                             <span class="text-sm font-semibold text-gray-900">15%</span>
@@ -277,7 +276,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2">
-                                <span class="h-3 w-3 rounded-sm bg-purple-400"></span>
+                                <span class="h-3 w-3 rounded-sm bg-[#8FD3BC]"></span>
                                 <span class="text-sm text-gray-600">Other</span>
                             </div>
                             <span class="text-sm font-semibold text-gray-900">10%</span>
@@ -307,7 +306,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <a href="<?= BASE_URL ?>/investor/investments.php"
                        class="flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4 transition hover:border-accent hover:shadow-sm">
-                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold-light text-gold-dark">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                         <span class="text-sm font-semibold text-gray-700">Invest</span>
@@ -389,7 +388,7 @@ include ROOT_PATH . '/components/shared/head.php';
                             <tr class="hover:bg-gray-50">
                                 <td class="px-6 py-4">
                                     <div class="flex items-center gap-3">
-                                        <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+                                        <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-gold-light text-gold-dark">
                                             <i class="fa-solid fa-chart-line"></i>
                                         </span>
                                         <span class="text-sm font-semibold text-gray-800">Investment Purchase</span>

@@ -1,4 +1,3 @@
-
 <?php
 $currentPage = $currentPage ?? '';
 ?>
@@ -9,11 +8,12 @@ $currentPage = $currentPage ?? '';
     <!-- Brand -->
     <div class="flex h-20 items-center justify-between border-b border-gray-100 px-6">
         <a href="<?= BASE_URL ?>/investor/dashboard.php"
-           class="flex items-center gap-2 text-xl font-bold tracking-tight text-brand">
-            <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-brand text-white">
-                <i class="fa-solid fa-chart-line"></i>
-            </span>
-            InvestGlobal
+           class="flex items-center">
+            <?php
+            $logoVariant = 'default';
+            $logoClass   = 'h-11 w-auto';
+            include ROOT_PATH . '/components/shared/logo.php';
+            ?>
         </a>
 
         <button id="closeSidebar"

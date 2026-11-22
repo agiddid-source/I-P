@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -130,7 +129,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                 </p>
 
                 <a href="<?= BASE_URL ?>/investor/investments.php"
-                   class="inline-block mt-6 bg-[#0B1F33] text-white px-5 py-3 rounded-lg text-sm font-semibold">
+                   class="inline-block mt-6 bg-brand text-white px-5 py-3 rounded-lg text-sm font-semibold">
                     Browse Investments
                 </a>
             </div>
@@ -140,14 +139,14 @@ include ROOT_PATH . '/components/investor/sidebar.php';
             <!-- BREADCRUMB -->
             <div class="flex items-center gap-2 text-sm text-gray-500 mb-6">
                 <a href="<?= BASE_URL ?>/investor/investments.php"
-                   class="hover:text-emerald-700">
+                   class="hover:text-accent-dark">
                     Investments
                 </a>
 
                 <i class="fas fa-chevron-right text-xs"></i>
 
                 <a href="<?= BASE_URL ?>/investor/investment-details.php?id=<?= urlencode($product['id']) ?>"
-                   class="hover:text-emerald-700">
+                   class="hover:text-accent-dark">
                     Product Details
                 </a>
 
@@ -172,17 +171,17 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                 <div class="flex items-center justify-between text-xs sm:text-sm mb-4">
 
-                    <div class="flex items-center gap-2 text-emerald-700 font-semibold">
-                        <span class="w-7 h-7 rounded-full bg-emerald-100 flex items-center justify-center">
+                    <div class="flex items-center gap-2 text-accent-dark font-semibold">
+                        <span class="w-7 h-7 rounded-full bg-accent-light flex items-center justify-center">
                             <i class="fas fa-check text-xs"></i>
                         </span>
                         Select product
                     </div>
 
-                    <div class="h-px flex-1 bg-emerald-200 mx-3"></div>
+                    <div class="h-px flex-1 bg-accent/30 mx-3"></div>
 
-                    <div class="flex items-center gap-2 text-emerald-700 font-semibold">
-                        <span class="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center">
+                    <div class="flex items-center gap-2 text-accent-dark font-semibold">
+                        <span class="w-7 h-7 rounded-full bg-accent text-white flex items-center justify-center">
                             2
                         </span>
                         Review
@@ -200,7 +199,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                 </div>
 
                 <div class="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                    <div class="h-full w-2/3 bg-emerald-600 rounded-full"></div>
+                    <div class="h-full w-2/3 bg-accent rounded-full"></div>
                 </div>
 
             </section>
@@ -224,14 +223,14 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                                 </h2>
 
                                 <a href="<?= BASE_URL ?>/investor/investments.php"
-                                   class="text-xs font-semibold text-emerald-700 hover:text-emerald-800">
+                                   class="text-xs font-semibold text-accent-dark hover:text-accent-dark">
                                     Change product
                                 </a>
                             </div>
 
                             <div class="flex items-start gap-4">
 
-                                <div class="w-12 h-12 shrink-0 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-lg">
+                                <div class="w-12 h-12 shrink-0 rounded-xl bg-accent-light text-accent-dark flex items-center justify-center text-lg">
                                     <i class="fas fa-chart-line"></i>
                                 </div>
 
@@ -245,7 +244,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                                         · <?= htmlspecialchars($product['id']) ?>
                                     </p>
 
-                                    <span class="inline-block mt-2 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">
+                                    <span class="inline-block mt-2 text-xs font-semibold px-2.5 py-1 rounded-full bg-accent-light text-accent-dark">
                                         Available
                                     </span>
                                 </div>
@@ -309,7 +308,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                                            max="<?= $availableCash ?>"
                                            step="0.01"
                                            placeholder="Enter amount"
-                                           class="w-full pl-10 pr-4 py-4 border border-gray-200 rounded-lg text-xl font-bold text-gray-900 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100">
+                                           class="w-full pl-10 pr-4 py-4 border border-gray-200 rounded-lg text-xl font-bold text-gray-900 outline-none focus:border-accent focus:ring-2 focus:ring-accent/10">
                                 </div>
 
                                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mt-3">
@@ -322,7 +321,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                                     </p>
 
                                     <button type="button" id="useMaxAmount"
-                                            class="text-xs font-semibold text-emerald-700 hover:text-emerald-800 text-left">
+                                            class="text-xs font-semibold text-accent-dark hover:text-accent-dark text-left">
                                         Use available balance
                                     </button>
 
@@ -346,7 +345,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                                 </div>
 
                                 <a href="<?= BASE_URL ?>/investor/cash.php"
-                                   class="text-xs font-semibold text-emerald-700 hover:text-emerald-800 whitespace-nowrap">
+                                   class="text-xs font-semibold text-accent-dark hover:text-accent-dark whitespace-nowrap">
                                     View cash account
                                     <i class="fas fa-arrow-right ml-1"></i>
                                 </a>
@@ -386,7 +385,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                                 <input type="checkbox"
                                        id="riskAcknowledgement"
-                                       class="w-4 h-4 mt-1 accent-emerald-600 shrink-0">
+                                       class="w-4 h-4 mt-1 accent-accent shrink-0">
 
                                 <span class="text-sm text-gray-600 leading-relaxed">
                                     I acknowledge that I have reviewed the investment
@@ -459,12 +458,12 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                                 </span>
                             </div>
 
-                            <div class="mt-4 bg-emerald-50 rounded-lg p-3">
+                            <div class="mt-4 bg-accent-light rounded-lg p-3">
 
                                 <div class="flex items-start gap-2">
-                                    <i class="fas fa-circle-info text-emerald-700 mt-0.5"></i>
+                                    <i class="fas fa-circle-info text-accent-dark mt-0.5"></i>
 
-                                    <p class="text-xs text-emerald-800 leading-relaxed">
+                                    <p class="text-xs text-accent-dark leading-relaxed">
                                         The target return shown is illustrative.
                                         Actual performance may differ.
                                     </p>
@@ -474,7 +473,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                             <button type="submit"
                                     id="confirmInvestmentButton"
-                                    class="w-full mt-6 bg-[#0B1F33] hover:bg-[#163A59] text-white font-semibold text-sm py-3.5 rounded-lg transition">
+                                    class="w-full mt-6 bg-brand hover:bg-brand-light text-white font-semibold text-sm py-3.5 rounded-lg transition">
                                 Review & Confirm
                                 <i class="fas fa-arrow-right ml-2 text-xs"></i>
                             </button>
@@ -517,7 +516,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
 
                 <div class="bg-white w-full max-w-md rounded-2xl p-6 sm:p-7 shadow-xl">
 
-                    <div class="w-14 h-14 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto text-xl mb-5">
+                    <div class="w-14 h-14 rounded-full bg-accent-light text-accent flex items-center justify-center mx-auto text-xl mb-5">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
 
@@ -547,7 +546,7 @@ include ROOT_PATH . '/components/investor/sidebar.php';
                     </div>
 
                     <button type="button" id="closeConfirmationModal"
-                            class="w-full bg-[#0B1F33] hover:bg-[#163A59] text-white font-semibold text-sm py-3 rounded-lg transition">
+                            class="w-full bg-brand hover:bg-brand-light text-white font-semibold text-sm py-3 rounded-lg transition">
                         Return to investments
                     </button>
 
