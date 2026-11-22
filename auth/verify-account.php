@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -13,11 +12,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <!-- Header -->
     <header class="border-b border-border bg-white">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center gap-3 text-lg font-bold text-brand">
-                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-white">
-                    <i class="fa-solid fa-chart-line"></i>
-                </span>
-                InvestGlobal
+            <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center">
+                <?php
+                $logoVariant = 'default';
+                $logoClass   = 'h-10 w-auto';
+                include ROOT_PATH . '/components/shared/logo.php';
+                ?>
             </a>
 
             <a href="<?= BASE_URL ?>/auth/login.php" class="text-sm font-medium text-muted hover:text-brand">
@@ -113,7 +113,7 @@ include ROOT_PATH . '/components/shared/head.php';
             </div>
 
             <p class="mt-8 text-center text-xs text-muted">
-                © <?= date('Y') ?> InvestGlobal. All rights reserved.
+                &copy; <?= date('Y') ?> InvestGlobal. All rights reserved.
             </p>
 
         </div>
