@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -11,12 +10,12 @@ include ROOT_PATH . '/components/shared/head.php';
     <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
 
         <!-- Brand -->
-        <a href="<?= BASE_URL ?>/public/index.php"
-           class="inline-flex items-center gap-2 mb-10">
-            <span class="w-10 h-10 rounded-xl bg-brand text-white flex items-center justify-center">
-                <i class="fa-solid fa-chart-line"></i>
-            </span>
-            <span class="text-xl font-bold text-brand">InvestGlobal</span>
+        <a href="<?= BASE_URL ?>/public/index.php" class="inline-flex items-center mb-10">
+            <?php
+            $logoVariant = 'default';
+            $logoClass   = 'h-11 w-auto';
+            include ROOT_PATH . '/components/shared/logo.php';
+            ?>
         </a>
 
         <!-- Progress -->
@@ -230,7 +229,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <label class="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" id="accuracyDeclaration"
-                               class="mt-1 w-4 h-4 accent-emerald-600">
+                               class="mt-1 w-4 h-4 accent-accent">
 
                         <span class="text-sm text-gray-600 leading-relaxed">
                             I confirm that the information and documents I have
@@ -241,7 +240,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <label class="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" id="riskDeclaration"
-                               class="mt-1 w-4 h-4 accent-emerald-600">
+                               class="mt-1 w-4 h-4 accent-accent">
 
                         <span class="text-sm text-gray-600 leading-relaxed">
                             I understand that investing involves risk, including
@@ -251,7 +250,7 @@ include ROOT_PATH . '/components/shared/head.php';
 
                     <label class="flex items-start gap-3 cursor-pointer">
                         <input type="checkbox" id="termsDeclaration"
-                               class="mt-1 w-4 h-4 accent-emerald-600">
+                               class="mt-1 w-4 h-4 accent-accent">
 
                         <span class="text-sm text-gray-600 leading-relaxed">
                             I acknowledge that my application will be reviewed
