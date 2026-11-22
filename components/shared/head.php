@@ -1,4 +1,3 @@
-
 <?php
 $pageTitle = $pageTitle ?? APP_NAME;
 $bodyClass = $bodyClass ?? 'bg-canvas font-sans text-gray-900';
@@ -12,6 +11,9 @@ $bodyClass = $bodyClass ?? 'bg-canvas font-sans text-gray-900';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title><?= htmlspecialchars($pageTitle) ?></title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="<?= ASSET_URL ?>/images/favicon.png">
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,14 +40,19 @@ $bodyClass = $bodyClass ?? 'bg-canvas font-sans text-gray-900';
                 extend: {
                     colors: {
                         brand: {
-                            DEFAULT: '#0B1F33',
-                            dark: '#071522',
-                            light: '#163A59'
+                            DEFAULT: '#064B3E',
+                            dark: '#043329',
+                            light: '#0B6A57'
                         },
                         accent: {
                             DEFAULT: '#0F9D78',
                             dark: '#087A5D',
                             light: '#DDF5ED'
+                        },
+                        gold: {
+                            DEFAULT: '#DDA235',
+                            dark: '#B8841F',
+                            light: '#FBF1DA'
                         },
                         surface: '#FFFFFF',
                         canvas: '#F7F9FB',

@@ -1,4 +1,3 @@
-
 <?php
 
 require_once __DIR__ . '/../config/app.php';
@@ -18,7 +17,7 @@ include ROOT_PATH . '/components/public/header.php';
 <section class="relative overflow-hidden bg-brand">
 
     <div class="absolute -top-32 -right-20 w-96 h-96 bg-accent opacity-10 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-40 -left-20 w-96 h-96 bg-blue-400 opacity-10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-20 w-96 h-96 bg-gold opacity-10 rounded-full blur-3xl"></div>
 
     <div class="max-w-7xl mx-auto px-5 lg:px-8 py-24 lg:py-32 relative">
 
@@ -31,7 +30,7 @@ include ROOT_PATH . '/components/public/header.php';
 
                     Make your money work towards
 
-                    <span class="text-emerald-400">
+                    <span class="text-gold">
                         your future.
                     </span>
 
@@ -70,12 +69,12 @@ include ROOT_PATH . '/components/public/header.php';
                 <div class="flex flex-wrap items-center gap-x-7 gap-y-3 mt-10 text-sm text-gray-300">
 
                     <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                        <i class="fa-solid fa-shield-halved text-gold"></i>
                         Risk-conscious investing
                     </div>
 
                     <div class="flex items-center gap-2">
-                        <i class="fa-solid fa-chart-pie text-emerald-400"></i>
+                        <i class="fa-solid fa-chart-pie text-gold"></i>
                         Portfolio visibility
                     </div>
 
@@ -151,7 +150,7 @@ include ROOT_PATH . '/components/public/header.php';
 
                             <div class="bg-brand w-[45%]"></div>
                             <div class="bg-accent w-[30%]"></div>
-                            <div class="bg-blue-400 w-[25%]"></div>
+                            <div class="bg-gold w-[25%]"></div>
 
                         </div>
 
@@ -175,7 +174,7 @@ include ROOT_PATH . '/components/public/header.php';
 
                             <div>
                                 <div class="flex items-center gap-2 text-xs text-muted">
-                                    <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+                                    <span class="w-2 h-2 rounded-full bg-gold"></span>
                                     Other
                                 </div>
                                 <p class="font-bold text-brand mt-1">25%</p>
@@ -288,7 +287,7 @@ include ROOT_PATH . '/components/public/header.php';
             <!-- Equities -->
             <div class="group border border-border rounded-xl p-7 hover:border-accent hover:shadow-card transition">
 
-                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-105 transition">
+                <div class="w-14 h-14 bg-gold-light text-gold-dark rounded-xl flex items-center justify-center mb-6 group-hover:scale-105 transition">
                     <i class="fa-solid fa-chart-pie text-2xl"></i>
                 </div>
 
@@ -412,7 +411,7 @@ include ROOT_PATH . '/components/public/header.php';
             <!-- Opportunity 1 -->
             <article class="bg-white border border-border rounded-2xl overflow-hidden hover:shadow-card transition">
 
-                <div class="h-44 bg-gradient-to-br from-brand to-blue-700 flex items-center justify-center relative">
+                <div class="h-44 bg-gradient-to-br from-brand to-brand-light flex items-center justify-center relative">
 
                     <i class="fa-solid fa-building-columns text-white/30 text-7xl"></i>
 
@@ -668,7 +667,7 @@ include ROOT_PATH . '/components/public/header.php';
 
                 <div class="bg-canvas rounded-2xl p-7">
 
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-5">
+                    <div class="w-12 h-12 bg-gold-light text-gold-dark rounded-xl flex items-center justify-center mb-5">
                         <i class="fa-solid fa-globe text-xl"></i>
                     </div>
 
@@ -940,7 +939,7 @@ include ROOT_PATH . '/components/public/header.php';
 
     <div class="max-w-4xl mx-auto px-5 text-center relative">
 
-        <span class="text-emerald-400 text-sm font-bold uppercase tracking-wider">
+        <span class="text-gold text-sm font-bold uppercase tracking-wider">
             Take your next step
         </span>
 

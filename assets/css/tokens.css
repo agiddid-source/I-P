@@ -1,14 +1,19 @@
-
 :root {
     /* Brand Colors */
-    --color-brand: #0B1F33;
-    --color-brand-dark: #071522;
-    --color-brand-light: #163A59;
+    /* Deep forest green sampled from the Invest Global logo */
+    --color-brand: #064B3E;
+    --color-brand-dark: #043329;
+    --color-brand-light: #0B6A57;
 
     /* Accent Colors */
     --color-accent: #0F9D78;
     --color-accent-dark: #087A5D;
     --color-accent-light: #DDF5ED;
+
+    /* Gold (logo wordmark / ring) */
+    --color-gold: #DDA235;
+    --color-gold-dark: #B8841F;
+    --color-gold-light: #FBF1DA;
 
     /* Backgrounds */
     --color-background: #F7F9FB;

@@ -1,9 +1,8 @@
-
 <?php
 
 require_once __DIR__ . '/config/app.php';
 
-$pageTitle = 'Investment Platform | Welcome';
+$pageTitle = 'Invest Global | Welcome';
 $bodyClass = 'bg-canvas font-sans text-gray-900';
 
 include ROOT_PATH . '/components/shared/head.php';
@@ -14,12 +13,16 @@ include ROOT_PATH . '/components/shared/head.php';
 
     <div class="bg-white border border-border rounded-panel shadow-card p-10 max-w-lg w-full text-center">
 
-        <div class="w-16 h-16 bg-accent-light text-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
-            <i class="fa-solid fa-chart-line text-2xl"></i>
+        <div class="flex justify-center mb-6">
+            <?php
+            $logoVariant = 'default';
+            $logoClass   = 'h-28 w-auto';
+            include ROOT_PATH . '/components/shared/logo.php';
+            ?>
         </div>
 
         <h1 class="text-3xl font-bold text-brand mb-3">
-            Investment Platform
+            Invest Global
         </h1>
 
         <p class="text-muted leading-relaxed mb-6">

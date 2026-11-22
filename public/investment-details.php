@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . '/../config/app.php';
 
@@ -29,7 +28,7 @@ include ROOT_PATH . '/components/public/header.php';
             <!-- MAIN PRODUCT INFORMATION -->
             <div class="lg:col-span-2">
 
-                <div class="bg-gradient-to-br from-brand to-blue-900 rounded-2xl p-7 md:p-10 text-white relative overflow-hidden">
+                <div class="bg-gradient-to-br from-brand to-brand-light rounded-2xl p-7 md:p-10 text-white relative overflow-hidden">
                     <div class="absolute -right-10 -top-10 w-64 h-64 rounded-full border border-white/10"></div>
                     <div class="absolute -right-2 -top-2 w-44 h-44 rounded-full border border-white/10"></div>
 
@@ -100,7 +99,7 @@ include ROOT_PATH . '/components/public/header.php';
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
                         <div class="flex gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center shrink-0">
+                            <div class="w-10 h-10 rounded-lg bg-gold-light text-gold-dark flex items-center justify-center shrink-0">
                                 <i class="fa-solid fa-coins"></i>
                             </div>
                             <div>
