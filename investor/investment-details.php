@@ -234,6 +234,26 @@ if (!isset($products[$productId])) {
     $product = $products[$productId];
 }
 
+/*
+|--------------------------------------------------------------------------
+| HELPERS
+|--------------------------------------------------------------------------
+*/
+
+if (!function_exists('formatInvestmentAmount')) {
+    function formatInvestmentAmount($amount, $currency) {
+        $symbols = [
+            'USD' => '$',
+            'EUR' => '€',
+            'GBP' => '£'
+        ];
+
+        $symbol = $symbols[$currency] ?? $currency . ' ';
+
+        return $symbol . number_format($amount, 0);
+    }
+}
+
 include ROOT_PATH . '/components/shared/head.php';
 include ROOT_PATH . '/components/investor/sidebar.php';
 ?>
